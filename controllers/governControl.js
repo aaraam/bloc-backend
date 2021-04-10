@@ -1,9 +1,9 @@
 const avaUtils = require('../utils/avaUtils.js');
 
-const createAccount = () => {
+const createAccount = async () => {
     try {
 
-        const result = avaUtils.createAccount();
+        const result = await avaUtils.createAccount();
         console.log({result});
 
         return result;
